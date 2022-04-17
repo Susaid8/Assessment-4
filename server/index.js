@@ -14,7 +14,7 @@ const {
   createFortunes,
   updateFortunes
   
-} = require('./controller')
+} = require('./controller.js')
 
 
   app.get('/api/fortune', (req,res) =>{
@@ -26,10 +26,6 @@ const {
   'If you wish to see the best in others, show the best of yourself.'
   ]
 
-  let randomIndex = Math.floor(Math.random() * fortunes.length);
-  let randomFortune = fortunes[randomIndex];
-
-  res.status(200).send(randomFortune);
   })
 
 app.listen(4000, () => console.log("Server running on 4000"));
@@ -39,5 +35,6 @@ app.get(`/api/fortunes`, getFortunes)
 app.delete(`/api/fortunes`, deleteFortunes)
 app.post(`/api/fortunes`, postFortunes)
 app.put(`/api/fortunes`, putFortunes)
+
 
 
