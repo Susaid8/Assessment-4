@@ -5,15 +5,49 @@
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body class="container">
-    <button id="fortuneButton">Find your fortune here</button>
+    <button id="complimentButton">Get a compliment</button>
+    <button id="fortuneButton">Get a fortune</button>
+    <button id="ratingButton">Get a rating</button>
+
+    <main>
+      <form>
+        
+            <section id="ratings-container">
+              <p>Rate the Fortunes:</p>
+            <div id="radio-container">
+                <label for="0">
+                    <input type="radio"name="ratings" value="0" id="zero percent"/> 0%
+                </label>
+               
+                  <label for="20">
+                    <input type="radio"name="ratings" value="20" id="twenty percent"/> 20%
+                  </label>
+              
+                <label for="40">
+                    <input type="radio"name="ratings"value="40"id="fourty percent"/> 40%
+                </label>
+               
+                <label for="60">
+                    <input type="radio" name="ratings"value="60"id="sixty percent"/> 60%
+                </label>
+               
+                <label for="80">
+                    <input type="radio"name="ratings"value="80" id="eighty percent"/> 80%
+                </label>
+
+                <label for="100">
+                  <input type="radio"name="ratings"value="100" id="one-hundred percent"/> 100%
+              </label>
+            </div>
+        </section>
+
+      </form>
+
+
+    </main>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-      <form>
-        <input> 
-            type='text'
-            </input>
-    </form>
 
-    <script src="./maun.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
